@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.gaotu.plugin</id>
+    <name>Animation Preview</name>
+    <vendor email="zhouyou04@baijia.com" url="https://github.com/orgs/community/discussions/">zhouyou04</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij"></extensions>
+
+    <actions>
+
+        <action id="com.gaotu.plugin.action.PreviewAnimationAction" class="com.gaotu.plugin.action.PreviewAnimationAction" text="Animation Preview"
+                description="Preview Json Animation">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+        <action id="com.gaotu.plugin.action.FindSamePictureAction"
+                class="com.gaotu.plugin.action.FindSamePictureAction" text="Find Same Picture"
+                description="find the same pictures in project">
+            <add-to-group group-id="RefactoringMenu" anchor="last"/>
+        </action>
+        <action id="com.gaotu.plugin.action.FindSimilarPictureAction"
+                class="com.gaotu.plugin.action.FindSimilarPictureAction" text="Find Similar PictureAction"
+                description="find similar pictures in porject">
+            <add-to-group group-id="RefactoringMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
